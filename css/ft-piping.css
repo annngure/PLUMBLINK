@@ -1,7 +1,10 @@
 /*button style*/
 
-.btn{
+.box-container  .row .buttons .btn{
    background-color: rgba(16, 68, 238, 0.726);
-   padding-right:
+  padding-right: 100px;
+}
+.col-md-3{
+    
 }
 

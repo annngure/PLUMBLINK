@@ -46,64 +46,70 @@
 
 //})
 
-//let supplierOne = [];
+let supplierOne = [];
 //let supplierTwo = [];
 //let supplierThree = [];
 
-//pipingItem =[
-  //  {
-    //    name: "Pvc Pipes Joints.",
-      //  size: "1.5 Inch",
-        //price: "Ksh 2000/",
-        //category: "joint"
-    //},
-    //{
+pipingItems =[
+   {
+       name: "Pvc Pipes Joints.",
+       size: "1.5 Inch",
+        price: "Ksh 2000/",
+        category: "joint"
+    },
+    {
      
-      //  name: "Flexiable Pipe Joints.",
-        //size: "1 Inch",
-        //price: "Ksh 1500/",
-        //category: "joint"
-    //},   
-    //{
+       name: "Flexiable Pipe Joints.",
+        size: "1 Inch",
+        price: "Ksh 1500/",
+        category: "joint"
+    },   
+    {
 
-        //name: "Water Joint pipe.",
-      //  size: "1/2 Inch",
-        //price: "Ksh 600/",
-        //category: "joint"
-    //},
-    //{
-      //  name: "Drainage expansion Joint pipee.",
-        //size: "1/2 Inch",
-        //price: "Ksh 1600/",
-        //category: "joint"  
-    //},
+        name: "Water Joint pipe.",
+       size: "1/2 Inch",
+        price: "Ksh 600/",
+        category: "joint"
+    },
+    {
+       name: "Drainage expansion Joint pipee.",
+        size: "1/2 Inch",
+        price: "Ksh 1600/",
+        category: "joint"  
+    },
+    {
+        name: "Water Horse Pipe",
+        size: "100m",
+        price: "120",
+        category: "water"
+    }
+
+]
+
+$('#supplierOne').on('click', () => {    
+    supplierOne = pipingItems.filter(pipingItem => pipingItem.category === "joint");
+    console.log(supplierOne);
+
+    document.getElementById("joints").innerHTML = supplierOne;
+})
 
 
-//]
+$("#supplierTwo").on('click', () => {
+   pipingItems.forEach(pipingItem => {
+       if(pipingItem.category == "water"){
+           supplierTwo.push(pipingItem)
+        }
+   })
+})
 
-//$('#supplierOne').on('click', () => {
-  //  pipingItems.forEach(pipingItem => {
-    //    if(pipingItem.category == "joint"){
-      //      supplierOne.push(pipingItem)
-        //}
-    //})  
-//})
-//console.log(supplierOne)
+$("#supplierThree").on('click',() => {
+   pipingItems.forEach(pipingItems => {
+    if(pipingItem.category=="electrical")
+       supplierThree.push(pipingItem)
+   })
+})
 
-//$("#supplierTwo").on('click', () => {
-  //  pipingItems.forEach(pipingItem => {
-    //    if(pipingItem.category == "water"){
-      //      supplierTwo.push(pipingItem)
-        //}
-   // })
-//})
 
-//$("#supplierThree").on('click',() => {
-  //  pipingItems.forEach(pipingItems => {
-    ///    if(pipingItem.category=="electrical")
-       // supplierThree.push(pipingItem)
-   // })
-//})
  
 //var buttons = document.querySelectorAll(".buttons ul li")
 
