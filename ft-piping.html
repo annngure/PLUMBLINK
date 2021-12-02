@@ -21,18 +21,20 @@
 <body>
     <h1 class="text-center">PIPING ITEMS.</h1>
     <div class="box-container">
-        <div class="row">
+        <div class="controls">
             <ul class="buttons">
-                <li class="btn button-active btn-info  " data-filter="all">All</li>
-                <li id="supplierOne" class="btn btn-info" data-filter="supplier1">Supplier 1</li>
-                <li id="suppliertwo" class="btn btn-info " data-filter="supplier2">Supplier 2</li>
-                <li  id="supplierthree" class="btn btn-info" data-filter="supplier3">Supplier 3</li>
+                <li class="btn button-active " data-filter="all">All</li>
+                <li  class="btn" data-filter="supplier1">Supplier 1</li>
+                <li  class="btn" data-filter="supplier2">Supplier 2</li>
+                <li  class="btn" data-filter="supplier3">Supplier 3</li>
             </ul>
+        </div>
     <!--supplier one items-->
-    <div class="joint"></div>
-          <div class="col-md-3" class="filterDiv-supplier1">
-
+    <div class="container">
+              <div class="box supplier1">
+           <div class="image">
             <img src="PVPpipe.jpeg" style="height:200px; width:200px">
+           </div>
             <div class="content">
                 <p>Name:
                     <span>Pvc Pipes Joints.</span>
@@ -42,13 +44,16 @@
                 </p>
                 <p>Price: 
                     <span>Ksh 2000/-</span>
+                 </p>
+                    <div class="overlay">
                     <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
-                </p>
+                    </div>
             </div>
-       </div>  
-       
-       <div class="col-md-3" class="filterDiv supplier1"  >
+         </div>
+       <div class=" box supplier1" >
+        <div class="image">
         <img src="flexibale.jpeg" style="height:200px; width:200px">
+         </div>
         <div class="content">
             <p>Name: 
              <span>Flexiable Pipe Joints.</span>
@@ -60,12 +65,17 @@
                 Price: 
                 <span>Ksh 1500/-</span>
             </p>
+                <div class="overlay">
+                <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
+                </div>
         </div>
     </div>
 
 
-    <div class="col-md-3" class="filterDiv-supplier1" >
+        <div class="box supplier1">
+        <div class="image">
         <img src="pipejoints.jpeg" style="height:200px; width:200px">
+         </div>
         <div class="content">
             <p>Name: 
              <span>Water Joint pipe.</span>
@@ -76,14 +86,17 @@
             <p>
                 Price: 
                 <span>Ksh 600/-</span>
-                <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
             </p>
-        </div>
+                <div class="overlay">
+             <i class="fa fa-shopping-cart" style="font-size:24px ;"></i>
+                </div>
+        </div>  
     </div>
            
-       
-    <div class="col-md-3" class="filterDiv-supplier1" >
+    <div class="box supplier1">
+        <div class="image">
         <img src="drainagejoint.jpeg" style="height:200px; width:200px">
+        </div>
         <div class="content">
             <p>Name: 
              <span>Drainage expansion Joint pipe.</span>
@@ -94,14 +107,17 @@
             <p>
                 Price: 
                 <span>Ksh 1600/-</span>
-                <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
             </p>
+            <div class="overlay">
+                <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
+            </div>
         </div>
-    </div>
     </div>   
      <!--supplier two items-->
-            <div class="col-md-3" id="filterDiv-supplier2">
+            <div class="box supplier2">
+            <div class="image">
             <img src="waterpipes.jpeg">
+            </div>
             <div class="content">
                 <p>Name: 
                     <span>Plastic Water pipe.</span>
@@ -112,13 +128,17 @@
                 <p>
                     Price: 
                     <span>Ksh 2500/-</span>
+                 </p>
+                 <div class="overlay">
                     <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
-                </p>
+                   </div>
             </div>
             </div>
 
-            <div class="col-md-3" id="filterDiv-supplier2">
+            <div class="box supplier2">
+                <div class="image">
                 <img src="waterjoinpipe.jpeg" style="height:200px; width:200px">
+                </div>
                 <div class="content">
                     <p>Name: 
                         <span>Iron Water pipe.</span>
@@ -128,14 +148,18 @@
                     </p>
                     <p>
                         Price: 
-                        <span>Ksh 3000/-</span>
-                        <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
+                        <span>Ksh 3000/-</span> 
                     </p>
+                    <div class="overlay">
+                        <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
+                     </div>
                 </div>
                 </div>
 
-                <div class="col-md-3" id="filterDiv-supplier2">
-                    <img src="waterpvcpipes.jpeg" style="height:200px; width:200px" >
+                <div class="box supplier2">
+                    <div class="image">
+                    <img src="waterpvcpipes.jpeg" style="height:200px; width:200px">
+                    </div>
                     <div class="content">
                         <p>Name: 
                             <span>Pvc Water pipe.</span>
@@ -145,14 +169,18 @@
                         </p>
                         <p>
                             Price: 
-                            <span>Ksh 4000/-</span>
+                            <span>Ksh 4000/-</span> 
+                         </p>
+                         <div class="overlay">
                             <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
-                        </p>
+                          </div>
                     </div>
                     </div>
 
-                    <div class="col-md-3" id="filterDiv supplier2">
+                    <div class="box supplier2">
+                        <div class="image">
                         <img src="upvcwater.jpeg" style="height:200px; width:200px">
+                        </div>
                         <div class="content">
                             <p>Name: 
                                 <span>Upvc Water pipe.</span>
@@ -163,15 +191,19 @@
                             <p>
                                 Price: 
                                 <span>Ksh 3500/-</span>
-                                <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
                             </p>
+                            <div class="overlay">
+                                <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
+                            </div>
                         </div>
                         </div>
     
 
         <!--supplier three items-->         
-            <div class="col-md-3" id="filterDiv supplier3">
-            <img src="steelelectical.jpeg" style="height:200px; width:200px" >
+            <div class="box supplier3">
+            <div class="image">
+            <img src="steelelectical.jpeg" style="height:200px; width:200px">
+            </div>
             <div class="content">
                 <p>Name: 
                     <span>Steel electical Pipes</span>
@@ -181,13 +213,17 @@
                 </p>
                 <p>Price:
                    <span>Ksh 500/-</span>
-                   <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
                 </p>
+                <div class="overlay">
+                   <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
+                </div>
             </div>
              </div>
 
-            <div class="col-md-3" id="filterDiv supplier3">
+            <div class="box supplier3">
+                <div class="image">
                 <img src="truckingpipe.jpeg" style="height:200px; width:200px">
+                </div>
                 <div class="content">
                     <p>Name:
                         <span>Flexible Electrical pipes.</span>
@@ -197,13 +233,17 @@
                     </p>
                     <p>Price: 
                         <span>Ksh 1000/-</span>
+                     </p>
+                     <div class="overlay">
                         <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
-                    </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-3" id="filterDiv supplier3">
+            <div class="box supplier3">
+                <div class="image">
                 <img src="pvcelectricalcasting.jpeg"style="height:200px; width:200px">
+                </div>
                 <div class="content">
                     <p>Name: 
                        <span>Casting Electical Pipe.</span>
@@ -215,14 +255,18 @@
                     <p>
                         Price: 
                         <span>Ksh 900/-</span>
-                        <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
                     </p>
+                    <div class="overlay">
+                        <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
+                    </div>
                 </div>
             </div>
         
            
-            <div class="col-md-3" id="filterDiv supplier3">
+            <div class="box supplier3">
+                <div class="image">
                 <img src="electicalpipes_1.jpg" style="height:200px; width:200px">
+                </div>
                 <div class="content">
                     <p>Name: 
                        <span>Plastic Electical Pipe.</span>
@@ -234,11 +278,13 @@
                     <p>
                         Price: 
                         <span>Ksh 1200/-</span>
-                        <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
                     </p>
+                    <div class="overlay">
+                        <span><i class="fa fa-shopping-cart" style="font-size:24px ;"></i></span>
+                    </div>
                 </div>
             </div> 
-
+         </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

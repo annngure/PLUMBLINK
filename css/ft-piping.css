@@ -1,10 +1,62 @@
 /*button style*/
-
-.box-container  .row .buttons .btn{
-   background-color: rgba(16, 68, 238, 0.726);
-  padding-right: 100px;
+.controls .buttons{
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
-.col-md-3{
+/*style button*/
+  .buttons .btn{
+    flex-wrap:wrap;
+    background-color: #26b0ce;
+    padding-right: 100px;
+    box-sizing: border-box;
+    border-radius:20px ;
+    box-shadow: 0.25rem 0.25rem rgba(0, 0, 0, 0.3);
+    margin:10px;
+    color:white; 
+}
+
+/*style the content*/
+
+.box-container .container {
+  display:flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin:0 auto;
+
+}
+.box-container .container .box{
+    display: flex;
+    flex-wrap: wrap;
+    flex:1 1 30rem;
+    border-radius:20px;
+    position:relative;
+    overflow: hidden;
+    margin: 5px;
+    justify-content:center;   
     
 }
+.box-container .container .box{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+/*cart style*/
+.container:hover .overlay{
+    transform: scale(1); 
+   
+}
+.container.i:hover{
+    transform: scale(1);
+    color: #26b0ce;
+    background-color: white;
+}
+.image:hover{
+    opacity: 1;
+}
+
+
 
